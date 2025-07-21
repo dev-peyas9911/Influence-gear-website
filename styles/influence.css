@@ -1,4 +1,6 @@
 /* Adding google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -8,4 +10,118 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Shared Style Starts Here */
+.display-flex {
+    display: flex;
+}
+
+.btn-primary {
+    font-weight: 700;
+    border-radius: 40px;
+    background-color: #E02C6D;
+    color: #ffffff;
+    padding: 10px 24px;
+    border: none;
+}
+
+/* Header Styles Starts Here */
+.header {
+    /* border: 2px solid red; */
+    max-width: 1200px;
+    margin: 70px auto;
+}
+
+/* Navbar Style */
+.nav-container {
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.links-container {
+    width: 460px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+/* Banner Styles Starts Here */
+.banner-container {
+    /* border: 2px solid blue; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content {
+    /* border: 1px solid green; */
+    max-width: 580px;
+    height: 270px;
+}
+
+.banner-title {
+    color: #3A3A3A;
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.banner-description {
+    max-width: 500px;
+    color: #3A3A3A;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.banner-image-container {
+    width: 475px;
+    height: 475px;
+    position: relative;
+}
+
+.outer-image {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.inner-image {
+    width: 100%;
+    position: absolute;
+}
+
+/* Responsive for small devices */
+@media screen and (max-width: 576px) {
+    /* Header section starts here */
+    .nav-container {
+        flex-direction: column;
+    }
+    .nav-title,
+    .links-container {
+        text-align: center;
+    }
+    
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+    .banner-content {
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 2rem;
+    }
+    /* Header section ends here */
+
+    
 }
