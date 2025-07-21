@@ -101,6 +101,24 @@ body {
     position: absolute;
 }
 
+/* Sponsor section styles starts here */
+.sponsor-container {
+    /* border: 2px solid red; */
+    max-width: 1110px;
+    height: 110px;
+    margin: 0 auto 100px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0 32px;
+    border: 2px solid rgb(191, 190, 217);
+}
+
+.sponsor-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Responsive for small devices */
 @media screen and (max-width: 576px) {
     /* Header section starts here */
@@ -123,5 +141,12 @@ body {
     }
     /* Header section ends here */
 
+    /* Sponsor section starts here */
+    .sponsor-container {
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0;
+    }
     
 }
