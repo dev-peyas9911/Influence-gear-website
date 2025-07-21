@@ -216,6 +216,38 @@ body {
     margin-bottom: 16px;
 }
 
+/* Footer section styles starts here */
+.footer {
+    background-color: #0d143c;
+    padding: 50px 0;
+}
+
+.footer-content {
+    /* border: 2px solid red; */
+    max-width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.footer-description {
+    color: #D9DBE1;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-content i {
+    color:  white;
+    padding-right: 5px;
+}
 
 /* Responsive for small devices */
 @media screen and (max-width: 576px) {
@@ -250,6 +282,9 @@ body {
     /*Card section starts here  */
     .card-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        margin: 0 auto;
     }
 
     /* feature section styles here */
